@@ -8,4 +8,4 @@ command in command line: mvn clean test
 
 Maven settings:
 
-image::../../tdd-by-example/doc/image-2021-11-23-15-54-32-015.png[]
+image::image-2021-11-23-22-43-43-586.png[]
