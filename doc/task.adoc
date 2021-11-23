@@ -1,0 +1,11 @@
+= JUnit test Maven
+
+== Testing from command line:
+
+http://tutorials.jenkov.com/maven/maven-commands.html (23 Nov 2021)
+
+command in command line: mvn clean test
+
+Maven settings:
+
+image::../../tdd-by-example/doc/image-2021-11-23-15-54-32-015.png[]
