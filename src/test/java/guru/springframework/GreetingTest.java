@@ -1,13 +1,15 @@
 package guru.springframework;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
 class GreetingTest {
 
     Greeting greeting;
+
+    @BeforeAll
+    public static void beforeClass() {
+        System.out.println("BeforeClass - I am only called once!");
+    }
 
     @BeforeEach
     void setUp() {
@@ -23,5 +25,15 @@ class GreetingTest {
     @Test
     void testHelloWorld() {
         System.out.println(greeting.helloWorld("Csaba"));
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("In AfterEach...");
+    }
+
+    @AfterAll
+    public static void afterClass() {
+        System.out.println("AfterClass ***** - I am only called once!");
     }
 }
